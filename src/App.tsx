@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { useState, useCallback, useMemo } from 'react';
 import { quizData } from '@/data/quizData';
 import type { Question, AnswerValue } from '@/types/quiz';
@@ -45,7 +46,7 @@ const partieHexColors: Record<string, string> = {
   "Contexte Madagascar": "#ea580c",
 };
 
-const GEMINI_API_KEY = 'AIzaSyDAGvj_YQ4aMt8VGX00Q6pzctykQU838sM';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;;
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
