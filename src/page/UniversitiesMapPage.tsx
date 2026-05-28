@@ -36,29 +36,15 @@ const OVERPASS_SERVERS = [
   "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
 ];
 
-const isProd = window.location.hostname !== "localhost";
-
 async function overpassQuery(query: string): Promise<any> {
   let lastError: any;
   for (const server of OVERPASS_SERVERS) {
     try {
-      if (isProd) {
-        const res = await axios.get(
-          `/api/overpass?server=${encodeURIComponent(server)}&data=${encodeURIComponent(query)}`,
-          { timeout: 60000 }
-        );
-        if (res.data?.elements) return res.data;
-      } else {
-        const res = await axios.post(
-          server,
-          `data=${encodeURIComponent(query)}`,
-          {
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            timeout: 60000,
-          }
-        );
-        if (res.data?.elements) return res.data;
-      }
+      const res = await axios.get(server, {
+        params: { data: query },
+        timeout: 60000,
+      });
+      if (res.data?.elements) return res.data;
     } catch (err: any) {
       console.warn(`Serveur ${server} échoué:`, err.message);
       lastError = err;
