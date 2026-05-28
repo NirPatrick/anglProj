@@ -36,12 +36,14 @@ const OVERPASS_SERVERS = [
   "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
 ];
 
+const CORS_PROXY = "https://corsproxy.io/?";
+
 async function overpassQuery(query: string): Promise<any> {
   let lastError: any;
   for (const server of OVERPASS_SERVERS) {
     try {
       const res = await axios.post(
-        server,
+        CORS_PROXY + encodeURIComponent(server),
         `data=${encodeURIComponent(query)}`,
         {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
