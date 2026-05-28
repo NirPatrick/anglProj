@@ -1,0 +1,293 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "quiz": "Quiz",
+    "testimonials": "Témoignages",
+    "startQuiz": "Commencer le quiz"
+  },
+  "hero": {
+    "badge": "Madagascar · Baccalauréat 2025",
+    "titleLine1": "Trouve ta",
+    "titleLine2": "voie idéale",
+    "description": "Un quiz intelligent de <strong>{{count}} questions</strong> alimenté par l'IA pour révéler les filières universitaires qui te correspondent vraiment.",
+    "startQuiz": "Commencer le quiz",
+    "howItWorks": "Comment ça marche",
+    "statParties": "Parties",
+    "statDuration": "Durée",
+    "statFree": "Gratuit",
+    "scrollDiscover": "Découvrir"
+  },
+  "features": {
+    "badge": "Fonctionnalités",
+    "title": "Pourquoi choisir notre quiz ?",
+    "subtitle": "Un outil unique conçu spécifiquement pour les bacheliers malgaches.",
+    "ai": {
+      "title": "Intelligence Artificielle",
+      "desc": "Analyse approfondie de ton profil grâce à Google Gemini pour des recommandations sur mesure."
+    },
+    "universities": {
+      "title": "Universités Malgaches",
+      "desc": "Focalisé sur les établissements publics de Madagascar : ESP, FLSH, FGES, ESSA, Médecine, ENI..."
+    },
+    "instant": {
+      "title": "Résultats Instantanés",
+      "desc": "Obtiens tes recommandations en quelques secondes, sans inscription ni backend nécessaire."
+    },
+    "free": {
+      "title": "100% Gratuit",
+      "desc": "Aucun frais, aucune donnée stockée. Ton vie privée est respectée."
+    }
+  },
+  "howItWorks": {
+    "badge": "Processus",
+    "title": "Comment ça marche ?",
+    "subtitle": "3 étapes simples pour trouver ta filière idéale.",
+    "step": "ÉTAPE {{num}}",
+    "steps": {
+      "1": {
+        "title": "Réponds aux questions",
+        "desc": "{{count}} questions en 4 parties : profil académique, personnalité, aspirations et contexte local."
+      },
+      "2": {
+        "title": "L'IA analyse ton profil",
+        "desc": "Google Gemini analyse tes réponses pour identifier tes forces, tes intérêts et tes contraintes."
+      },
+      "3": {
+        "title": "Reçois tes recommandations",
+        "desc": "3 filières universitaires malgaches personnalisées avec explications et conseils pratiques."
+      }
+    }
+  },
+  "quiz": {
+    "badge": "Quiz d'orientation",
+    "title": "C'est parti !",
+    "subtitle": "Réponds honnêtement, il n'y a pas de bonnes ou mauvaises réponses.",
+    "question": "Question {{num}}",
+    "maxChoices": "Jusqu'à {{max}} choix",
+    "homeTitle": "Retour à l'accueil",
+    "next": "Suivant",
+    "finish": "Terminer",
+    "placeholder": "Écrivez votre réponse ici...",
+    "parties": {
+      "academicProfile": "Profil Académique",
+      "personality": "Personnalité",
+      "aspirations": "Aspirations",
+      "madagascarContext": "Contexte Madagascar"
+    }
+  },
+  "results": {
+    "title": "Quiz terminé !",
+    "answersCount": "{{count}} réponses enregistrées",
+    "recap": "Récapitulatif",
+    "edit": "Modifier",
+    "aiAnalysis": "Analyse IA",
+    "aiDescription": "Recommandations personnalisées basées sur ton profil",
+    "analyzing": "Analyse en cours...",
+    "getRecommendations": "Obtenir mes recommandations",
+    "aiInfo": "Google Gemini · Gratuit · Sans backend",
+    "recommendedField": "Domaine recommandé",
+    "tipsTitle": "Conseils pour Madagascar",
+    "retryAnalysis": "Relancer l'analyse",
+    "export": "Exporter",
+    "restart": "Recommencer",
+    "exploreMap": "Explorer la carte des universités"
+  },
+  "testimonials": {
+    "badge": "Témoignages",
+    "title": "Ils ont trouvé leur voie",
+    "subtitle": "Des bacheliers qui ont utilisé notre quiz pour s'orienter.",
+    "items": [
+      {
+        "role": "Étudiant en Médecine, Antananarivo",
+        "text": "Ce quiz m'a aidé à confirmer mon choix de faire médecine. Les recommandations correspondaient exactement à mon profil !"
+      },
+      {
+        "role": "Étudiante en ESP, Fianarantsoa",
+        "text": "J'hésitais entre plusieurs filières. L'analyse IA m'a vraiment ouvert les yeux sur ce qui me correspondait."
+      },
+      {
+        "role": "Étudiant en ENI, Antsirabe",
+        "text": "Super outil ! Simple, rapide et les résultats sont pertinents. Je l'ai recommandé à tous mes amis bacheliers."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Quiz disponible maintenant",
+    "titleLine1": "Prêt à découvrir ta",
+    "titleLine2": "voie idéale",
+    "description": "Rejoins des centaines de bacheliers qui ont déjà trouvé leur orientation grâce à notre quiz.",
+    "startNow": "Commencer le quiz maintenant",
+    "exploreMap": "Explorer la carte des universités",
+    "free": "Gratuit",
+    "noSignup": "Sans inscription",
+    "duration": "10 minutes"
+  },
+  "footer": {
+    "copyright": "© 2025 Orientation.mg · Outil d'orientation gratuit pour les bacheliers malgaches"
+  },
+  "quizData": {
+    "title": "Quiz d'Orientation Post-Bac Madagascar",
+    "questions": {
+      "1": "Quelle est ta série de baccalauréat ?",
+      "2": "Dans quelles matières as-tu excellé et aimé travailler ? (2 choix max)",
+      "3": "Quel est ton niveau global en langues étrangères ?",
+      "4": "As-tu déjà des compétences techniques ou numériques ?",
+      "5": "Quelle activité te procure le plus de satisfaction ?",
+      "6": "Tu préfères travailler avec...",
+      "7": "Ton environnement de travail idéal ?",
+      "8": "Face à un défi, ton réflexe premier est de...",
+      "9": "Quelle vision as-tu de ta carrière dans 10 ans ?",
+      "10": "Quels secteurs t'attirent le plus ? (2 choix max)",
+      "11": "Quelle durée d'études es-tu prêt(e) à envisager ?",
+      "12": "Quelles sont tes contraintes principales ? (2 choix max)",
+      "13": "Quelle est ta situation géographique pour les études ?",
+      "14": "Quels défis du marché malgache te motivent ? (2 choix max)",
+      "15": "Ton projet professionnel doit absolument te permettre de..."
+    },
+    "options": {
+      "q1": [
+        "Série S (Scientifique)",
+        "Série L (Littéraire)",
+        "Série ES (Économique & Social)",
+        "Série Technologique (STI, STL, etc.)",
+        "Baccalauréat professionnel",
+        "Autre équivalence"
+      ],
+      "q2": [
+        "Mathématiques/Logique",
+        "Physique-Chimie/Sciences expérimentales",
+        "Langues/Communication",
+        "Sciences humaines/Histoire-Géo/Philosophie",
+        "Arts/Création/Design",
+        "Économie/Gestion",
+        "Biologie/Santé",
+        "Technologie/Informatique"
+      ],
+      "q3": [
+        "Français uniquement, anglais faible",
+        "Français + anglais intermédiaire (comprend, lit)",
+        "Français + anglais courant (parle, écrit)",
+        "Trilingue ou plus (français, anglais, malgache courant + autre)"
+      ],
+      "q4": [
+        "Programmation/codage (même basique)",
+        "Outils bureautiques avancés (Excel, bases de données)",
+        "Design/graphisme/outils créatifs",
+        "Mécanique/électricité/bricolage technique",
+        "Aucune compétence technique particulière"
+      ],
+      "q5": [
+        "Résoudre des problèmes complexes/analyser des données",
+        "Créer, imaginer, concevoir des choses nouvelles",
+        "Aider les autres, prendre soin, accompagner",
+        "Convaincre, négocier, vendre, manager",
+        "Construire, réparer, manipuler des outils/objets",
+        "Enseigner, transmettre, communiquer des idées"
+      ],
+      "q6": [
+        "Des chiffres, des données, des systèmes logiques",
+        "Des mots, des idées, des concepts abstraits",
+        "Des personnes, des relations, des émotions",
+        "Des matériaux, de la nature, des environnements concrets",
+        "Des technologies, des machines, des outils numériques"
+      ],
+      "q7": [
+        "Bureau structuré, entreprise organisée, hiérarchie claire",
+        "Start-up dynamique, flexibilité, innovation constante",
+        "En extérieur, terrain, déplacements fréquents",
+        "Laboratoire, atelier, espace de création dédié",
+        "Télétravail/autonomie complète, indépendance"
+      ],
+      "q8": [
+        "Chercher des informations, analyser, comprendre en profondeur",
+        "Brainstormer, trouver une solution originale/inédite",
+        "Consulter les autres, faire équipe, collaborer",
+        "Passer à l'action rapidement, tester, apprendre par l'erreur",
+        "Établir un plan étape par étape, méthodiquement"
+      ],
+      "q9": [
+        "Expert technique reconnu dans mon domaine (ingénieur, chercheur, spécialiste)",
+        "Manager/leader d'équipe ou d'entreprise (direction, management)",
+        "Entrepreneur à mon compte ou créateur d'entreprise",
+        "Fonctionnaire/stable dans l'administration publique/ONG",
+        "Freelance/indépendant avec variété de projets",
+        "Je ne sais pas encore, je veux découvrir"
+      ],
+      "q10": [
+        "Santé et bien-être (médecine, soins, pharmacie)",
+        "Technologie et innovation (IT, digital, ingénierie)",
+        "Économie et affaires (finance, commerce, gestion)",
+        "Éducation et transmission (enseignement, formation)",
+        "Environnement et agriculture (développement durable, agro)",
+        "Droit et administration (justice, publique, RH)",
+        "Arts, médias et communication (culture, divertissement)",
+        "Tourisme et hôtellerie (services, accueil)"
+      ],
+      "q11": [
+        "Court (2-3 ans) : BTS, licence professionnelle, formation qualifiante",
+        "Moyen (3-4 ans) : Licence classique, école spécialisée",
+        "Long (5-6 ans) : Master, école d'ingénieurs, pharmacie",
+        "Très long (7-8 ans+) : Médecine, doctorat, architecture",
+        "Alternance/apprentissage : apprendre en travaillant"
+      ],
+      "q12": [
+        "Budget limité : besoin de bourse ou travail en parallèle",
+        "Géographique : doit rester dans ma région actuelle",
+        "Familiale : responsabilités familiales importantes",
+        "Temporelle : besoin de rapidité (rentabilité rapide)",
+        "Aucune contrainte majeure, ouvert(e) à tout"
+      ],
+      "q13": [
+        "Je suis à Antananarivo et peux y rester",
+        "Je suis en province et peux déménager à Antananarivo",
+        "Je dois absolument rester dans ma région (Fianarantsoa, Toamasina, etc.)",
+        "Je peux partir à l'étranger (France, pays francophones)",
+        "Ouvert(e) à toute option géographique"
+      ],
+      "q14": [
+        "L'agriculture durable et la sécurité alimentaire",
+        "L'accès à la santé et la médecine de proximité",
+        "L'éducation et la formation des jeunes",
+        "La transition numérique et l'innovation technologique",
+        "Le développement touristique responsable",
+        "Les énergies renouvelables et l'environnement",
+        "L'entrepreneuriat et la création d'emplois"
+      ],
+      "q15": [
+        "Avoir un revenu stable et sécurisé rapidement",
+        "Contribuer au développement de Madagascar",
+        "T'expatrier ou travailler à l'international",
+        "Créer ta propre entreprise et être indépendant",
+        "Acquérir un statut social reconnu et respecté",
+        "Équilibre entre vie professionnelle et personnelle"
+      ]
+    }
+  },
+  "errors": {
+    "answerAll": "Répondez à toutes les questions !",
+    "invalidFormat": "Format de réponse invalide",
+    "apiKeyInvalid": "Clé API invalide. Obtenez-en une gratuite sur aistudio.google.com",
+    "aiError": "Erreur IA. Vérifiez votre connexion internet."
+  },
+  "map": {
+    "backToHome": "Retour à l'accueil",
+    "overview": "Vue d'ensemble",
+    "province": "Province",
+    "search": "Rechercher...",
+    "establishment": "établissement",
+    "establishments": "établissements",
+    "noUniversityFound": "Aucune université trouvée",
+    "noResults": "Aucun résultat",
+    "loadingProvinces": "Chargement des provinces...",
+    "retry": "Réessayer",
+    "mapTooltip": "Cliquez sur une province pour voir ses universités",
+    "searching": "Recherche en cours...",
+    "hide": "Masquer",
+    "list": "Liste",
+    "university": "université",
+    "universities": "universités",
+    "seeList": "Voir la liste →"
+  }
+}

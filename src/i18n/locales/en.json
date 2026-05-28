@@ -1,0 +1,293 @@
+{
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "howItWorks": "How it works",
+    "quiz": "Quiz",
+    "testimonials": "Testimonials",
+    "startQuiz": "Start the quiz"
+  },
+  "hero": {
+    "badge": "Madagascar · Baccalauréat 2025",
+    "titleLine1": "Find your",
+    "titleLine2": "ideal path",
+    "description": "An intelligent <strong>{{count}}-question quiz</strong> powered by AI to reveal the university programs that truly match you.",
+    "startQuiz": "Start the quiz",
+    "howItWorks": "How it works",
+    "statParties": "Sections",
+    "statDuration": "Duration",
+    "statFree": "Free",
+    "scrollDiscover": "Discover"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Why choose our quiz?",
+    "subtitle": "A unique tool designed specifically for Malagasy high school graduates.",
+    "ai": {
+      "title": "Artificial Intelligence",
+      "desc": "In-depth analysis of your profile using Google Gemini for personalized recommendations."
+    },
+    "universities": {
+      "title": "Malagasy Universities",
+      "desc": "Focused on public institutions in Madagascar: ESP, FLSH, FGES, ESSA, Medicine, ENI..."
+    },
+    "instant": {
+      "title": "Instant Results",
+      "desc": "Get your recommendations in seconds, no registration or backend required."
+    },
+    "free": {
+      "title": "100% Free",
+      "desc": "No fees, no data stored. Your privacy is respected."
+    }
+  },
+  "howItWorks": {
+    "badge": "Process",
+    "title": "How does it work?",
+    "subtitle": "3 simple steps to find your ideal program.",
+    "step": "STEP {{num}}",
+    "steps": {
+      "1": {
+        "title": "Answer the questions",
+        "desc": "{{count}} questions in 4 sections: academic profile, personality, aspirations and local context."
+      },
+      "2": {
+        "title": "AI analyzes your profile",
+        "desc": "Google Gemini analyzes your answers to identify your strengths, interests and constraints."
+      },
+      "3": {
+        "title": "Get your recommendations",
+        "desc": "3 personalized Malagasy university programs with explanations and practical advice."
+      }
+    }
+  },
+  "quiz": {
+    "badge": "Orientation quiz",
+    "title": "Let's go!",
+    "subtitle": "Answer honestly, there are no right or wrong answers.",
+    "question": "Question {{num}}",
+    "maxChoices": "Up to {{max}} choices",
+    "homeTitle": "Back to home",
+    "next": "Next",
+    "finish": "Finish",
+    "placeholder": "Write your answer here...",
+    "parties": {
+      "academicProfile": "Academic Profile",
+      "personality": "Personality",
+      "aspirations": "Aspirations",
+      "madagascarContext": "Madagascar Context"
+    }
+  },
+  "results": {
+    "title": "Quiz completed!",
+    "answersCount": "{{count}} answers recorded",
+    "recap": "Summary",
+    "edit": "Edit",
+    "aiAnalysis": "AI Analysis",
+    "aiDescription": "Personalized recommendations based on your profile",
+    "analyzing": "Analyzing...",
+    "getRecommendations": "Get my recommendations",
+    "aiInfo": "Google Gemini · Free · No backend",
+    "recommendedField": "Recommended field",
+    "tipsTitle": "Tips for Madagascar",
+    "retryAnalysis": "Retry analysis",
+    "export": "Export",
+    "restart": "Restart",
+    "exploreMap": "Explore the university map"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "They found their path",
+    "subtitle": "High school graduates who used our quiz to find their direction.",
+    "items": [
+      {
+        "role": "Medical Student, Antananarivo",
+        "text": "This quiz helped me confirm my choice to study medicine. The recommendations matched my profile exactly!"
+      },
+      {
+        "role": "ESP Student, Fianarantsoa",
+        "text": "I was hesitating between several programs. The AI analysis really opened my eyes to what suited me best."
+      },
+      {
+        "role": "ENI Student, Antsirabe",
+        "text": "Great tool! Simple, fast and the results are relevant. I recommended it to all my fellow graduates."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Quiz available now",
+    "titleLine1": "Ready to discover your",
+    "titleLine2": "ideal path",
+    "description": "Join hundreds of graduates who have already found their direction with our quiz.",
+    "startNow": "Start the quiz now",
+    "exploreMap": "Explore the university map",
+    "free": "Free",
+    "noSignup": "No registration",
+    "duration": "10 minutes"
+  },
+  "footer": {
+    "copyright": "© 2025 Orientation.mg · Free orientation tool for Malagasy graduates"
+  },
+  "quizData": {
+    "title": "Post-Bac Orientation Quiz Madagascar",
+    "questions": {
+      "1": "What is your baccalauréat series?",
+      "2": "In which subjects did you excel and enjoy working? (2 choices max)",
+      "3": "What is your overall level in foreign languages?",
+      "4": "Do you already have technical or digital skills?",
+      "5": "Which activity gives you the most satisfaction?",
+      "6": "Do you prefer to work with...",
+      "7": "Your ideal work environment?",
+      "8": "When faced with a challenge, your first instinct is to...",
+      "9": "What is your vision for your career in 10 years?",
+      "10": "Which sectors attract you the most? (2 choices max)",
+      "11": "What study duration are you willing to consider?",
+      "12": "What are your main constraints? (2 choices max)",
+      "13": "What is your geographic situation for studies?",
+      "14": "Which challenges of the Malagasy market motivate you? (2 choices max)",
+      "15": "Your professional project must absolutely allow you to..."
+    },
+    "options": {
+      "q1": [
+        "Série S (Scientific)",
+        "Série L (Literary)",
+        "Série ES (Economic & Social)",
+        "Technological Series (STI, STL, etc.)",
+        "Professional Baccalauréat",
+        "Other equivalence"
+      ],
+      "q2": [
+        "Mathematics/Logic",
+        "Physics-Chemistry/Experimental Sciences",
+        "Languages/Communication",
+        "Human Sciences/History-Geo/Philosophy",
+        "Arts/Creation/Design",
+        "Economics/Management",
+        "Biology/Health",
+        "Technology/Computer Science"
+      ],
+      "q3": [
+        "French only, weak English",
+        "French + intermediate English (understands, reads)",
+        "French + fluent English (speaks, writes)",
+        "Trilingual or more (French, English, fluent Malagasy + other)"
+      ],
+      "q4": [
+        "Programming/coding (even basic)",
+        "Advanced office tools (Excel, databases)",
+        "Design/graphic/creative tools",
+        "Mechanics/electrical/technical DIY",
+        "No particular technical skills"
+      ],
+      "q5": [
+        "Solving complex problems/analyzing data",
+        "Creating, imagining, designing new things",
+        "Helping others, taking care, supporting",
+        "Persuading, negotiating, selling, managing",
+        "Building, repairing, handling tools/objects",
+        "Teaching, sharing, communicating ideas"
+      ],
+      "q6": [
+        "Numbers, data, logical systems",
+        "Words, ideas, abstract concepts",
+        "People, relationships, emotions",
+        "Materials, nature, concrete environments",
+        "Technologies, machines, digital tools"
+      ],
+      "q7": [
+        "Structured office, organized company, clear hierarchy",
+        "Dynamic startup, flexibility, constant innovation",
+        "Outdoors, fieldwork, frequent travel",
+        "Laboratory, workshop, dedicated creative space",
+        "Remote work/full autonomy, independence"
+      ],
+      "q8": [
+        "Research information, analyze, understand deeply",
+        "Brainstorm, find an original/unprecedented solution",
+        "Consult others, team up, collaborate",
+        "Take action quickly, test, learn from mistakes",
+        "Establish a step-by-step plan, methodically"
+      ],
+      "q9": [
+        "Recognized technical expert in my field (engineer, researcher, specialist)",
+        "Manager/team or company leader (direction, management)",
+        "Self-employed entrepreneur or business creator",
+        "Civil servant/stable in public administration/NGO",
+        "Freelance/independent with variety of projects",
+        "I don't know yet, I want to explore"
+      ],
+      "q10": [
+        "Health and wellness (medicine, care, pharmacy)",
+        "Technology and innovation (IT, digital, engineering)",
+        "Economy and business (finance, commerce, management)",
+        "Education and teaching (teaching, training)",
+        "Environment and agriculture (sustainable development, agro)",
+        "Law and administration (justice, public, HR)",
+        "Arts, media and communication (culture, entertainment)",
+        "Tourism and hospitality (services, reception)"
+      ],
+      "q11": [
+        "Short (2-3 years): BTS, professional bachelor's, qualifying training",
+        "Medium (3-4 years): Regular bachelor's, specialized school",
+        "Long (5-6 years): Master's, engineering school, pharmacy",
+        "Very long (7-8+ years): Medicine, doctorate, architecture",
+        "Work-study/apprenticeship: learning while working"
+      ],
+      "q12": [
+        "Limited budget: need scholarship or parallel work",
+        "Geographic: must stay in my current region",
+        "Family: significant family responsibilities",
+        "Time: need speed (quick profitability)",
+        "No major constraint, open to everything"
+      ],
+      "q13": [
+        "I am in Antananarivo and can stay there",
+        "I am in the provinces and can move to Antananarivo",
+        "I must absolutely stay in my region (Fianarantsoa, Toamasina, etc.)",
+        "I can go abroad (France, francophone countries)",
+        "Open to any geographic option"
+      ],
+      "q14": [
+        "Sustainable agriculture and food security",
+        "Access to healthcare and proximity medicine",
+        "Education and youth training",
+        "Digital transition and technological innovation",
+        "Responsible tourism development",
+        "Renewable energy and environment",
+        "Entrepreneurship and job creation"
+      ],
+      "q15": [
+        "Have a stable and secure income quickly",
+        "Contribute to Madagascar's development",
+        "Expatriate or work internationally",
+        "Create your own business and be independent",
+        "Acquire a recognized and respected social status",
+        "Balance between professional and personal life"
+      ]
+    }
+  },
+  "errors": {
+    "answerAll": "Answer all questions!",
+    "invalidFormat": "Invalid response format",
+    "apiKeyInvalid": "Invalid API key. Get a free one at aistudio.google.com",
+    "aiError": "AI error. Check your internet connection."
+  },
+  "map": {
+    "backToHome": "Back to home",
+    "overview": "Overview",
+    "province": "Province",
+    "search": "Search...",
+    "establishment": "institution",
+    "establishments": "institutions",
+    "noUniversityFound": "No university found",
+    "noResults": "No results",
+    "loadingProvinces": "Loading provinces...",
+    "retry": "Retry",
+    "mapTooltip": "Click on a province to see its universities",
+    "searching": "Searching...",
+    "hide": "Hide",
+    "list": "List",
+    "university": "university",
+    "universities": "universities",
+    "seeList": "See the list →"
+  }
+}
