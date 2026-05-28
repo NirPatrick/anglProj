@@ -7,22 +7,22 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  // Extract host from the URL path: /api/overpass/{host}
   const url = new URL(req.url, `https://${req.headers.host}`);
-  const pathParts = url.pathname.split("/").filter(Boolean);
-  // ["api", "overpass", "host"]
-  const host = pathParts[2];
+  const server = url.searchParams.get("server");
 
-  if (!host) {
-    return res.status(400).json({ error: "Missing host in URL path" });
+  if (!server) {
+    return res.status(400).json({ error: "Missing server parameter" });
   }
 
   try {
-    const serverUrl = `https://${host}/api/interpreter`;
-    const response = await fetch(serverUrl, {
+    const chunks = [];
+    for await (const chunk of req) chunks.push(chunk);
+    const body = Buffer.concat(chunks).toString();
+
+    const response = await fetch(server, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: req.body,
+      body,
     });
 
     const json = await response.json();
