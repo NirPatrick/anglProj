@@ -40,10 +40,11 @@ async function overpassQuery(query: string): Promise<any> {
   let lastError: any;
   for (const server of OVERPASS_SERVERS) {
     try {
-      const res = await axios.get(server, {
-        params: { data: query },
-        timeout: 60000,
-      });
+      const res = await axios.post(
+        "/api/overpass",
+        { server, data: query },
+        { timeout: 60000 }
+      );
       if (res.data?.elements) return res.data;
     } catch (err: any) {
       console.warn(`Serveur ${server} échoué:`, err.message);
