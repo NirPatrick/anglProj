@@ -12,23 +12,38 @@ function overpassProxy() {
         const body = JSON.parse(Buffer.concat(chunks).toString());
         const { server: target, data } = body;
 
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 15000);
+
         try {
           const formData = `data=${encodeURIComponent(data)}`;
           const response = await fetch(target, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded',
+              'User-Agent': 'OrientationMg/1.0 (https://angl-proj.vercel.app)',
+              'Accept': 'application/json',
             },
             body: formData,
+            signal: controller.signal,
           });
-          const json = await response.json();
+
+          clearTimeout(timeout);
+          const text = await response.text();
           res.setHeader('Content-Type', 'application/json');
-          res.end(JSON.stringify(json));
+
+          try {
+            const json = JSON.parse(text);
+            res.end(JSON.stringify(json));
+          } catch {
+            res.statusCode = 502;
+            res.end(JSON.stringify({ error: `Upstream ${response.status}` }));
+          }
         } catch (err: any) {
-          console.error('Overpass proxy error:', err.message);
+          clearTimeout(timeout);
           res.statusCode = 502;
           res.setHeader('Content-Type', 'application/json');
-          res.end(JSON.stringify({ error: err.message }));
+          res.end(JSON.stringify({ error: err?.name === 'AbortError' ? 'Timeout' : (err.message || 'Proxy error') }));
         }
       });
     },
