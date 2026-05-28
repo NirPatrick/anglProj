@@ -47,8 +47,9 @@ async function overpassQuery(query: string): Promise<any> {
       );
       if (res.data?.elements) return res.data;
     } catch (err: any) {
-      console.warn(`Serveur ${server} échoué:`, err.message);
-      lastError = err;
+      const msg = err?.response?.data?.error || err?.message || String(err);
+      console.warn(`Serveur ${server} échoué:`, msg);
+      lastError = new Error(msg);
     }
   }
   throw lastError;
