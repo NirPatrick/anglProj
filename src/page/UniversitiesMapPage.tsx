@@ -30,24 +30,25 @@ const icon = new L.Icon({
 });
 
 // ---- Overpass ----
-const OVERPASS_SERVERS = [
-  "https://overpass-api.de/api/interpreter",
-  "https://overpass.kumi.systems/api/interpreter",
-  "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+const OVERPASS_HOSTS = [
+  "overpass-api.de",
+  "overpass.kumi.systems",
+  "maps.mail.ru",
 ];
 
 async function overpassQuery(query: string): Promise<any> {
   let lastError: any;
-  for (const server of OVERPASS_SERVERS) {
+  for (const host of OVERPASS_HOSTS) {
     try {
+      const proxyUrl = `/api/overpass/${host}`;
       const res = await axios.post(
-        "/api/overpass",
-        { server, data: query },
-        { headers: { "Content-Type": "application/json" }, timeout: 60000 }
+        proxyUrl,
+        `data=${encodeURIComponent(query)}`,
+        { headers: { "Content-Type": "application/x-www-form-urlencoded" }, timeout: 60000 }
       );
       if (res.data?.elements) return res.data;
     } catch (err: any) {
-      console.warn(`Serveur ${server} échoué:`, err.message);
+      console.warn(`Serveur ${host} échoué:`, err.message);
       lastError = err;
     }
   }
